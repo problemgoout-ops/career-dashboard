@@ -1,1 +1,1002 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>39 вакансий Алексея Титова</title><style> * { box-sizing: border-box; margin: 0; padding: 0; } body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'SF Pro Display', sans-serif; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); color: #1a202c; line-height: 1.6; padding: 10px; min-height: 100vh; } .container { max-width: 1400px; margin: 0 auto; padding: 0 15px; } .header { text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px 20px; margin: -10px -15px 40px -15px; border-radius: 0 0 25px 25px; } h1 { font-size: clamp(2rem, 5vw, 4rem); font-weight: 700; margin-bottom: 15px; text-shadow: 0 2px 4px rgba(0,0,0,0.1); } .subtitle { font-size: clamp(1rem, 2.5vw, 1.25rem); opacity: 0.95; margin-bottom: 30px; font-weight: 300; } .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin: 30px 0; max-width: 600px; margin-left: auto; margin-right: auto; } .stat { background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 20px; border-radius: 20px; text-align: center; border: 1px solid rgba(255,255,255,0.2); } .stat-number { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: #fbbf24; text-shadow: 0 2px 4px rgba(0,0,0,0.1); } .stat-label { font-size: 0.9rem; opacity: 0.9; font-weight: 500; } .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 25px; margin: 40px 0; } .card { background: white; border: 2px solid #e2e8f0; border-radius: 20px; padding: 25px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); position: relative; overflow: hidden; } .card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #667eea, #764ba2); } .card:hover { transform: translateY(-8px); border-color: #667eea; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); } .card-title { font-size: clamp(1.1rem, 2vw, 1.3rem); font-weight: 700; margin-bottom: 12px; color: #1a202c; line-height: 1.4; } .card-company { color: #64748b; margin-bottom: 15px; font-weight: 500; font-size: 0.95rem; } .score { display: inline-block; background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 6px 14px; border-radius: 25px; font-weight: 700; font-size: 0.85rem; margin-bottom: 15px; box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.3); } .score-medium { background: linear-gradient(135deg, #f59e0b, #d97706); box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.3); } .tags { display: flex; gap: 8px; margin-bottom: 15px; flex-wrap: wrap; } .tag { background: linear-gradient(135deg, #ede9fe, #ddd6fe); color: #6d28d9; padding: 4px 12px; border-radius: 15px; font-size: 0.75rem; font-weight: 600; border: 1px solid #c4b5fd; } .tag-cdto { background: linear-gradient(135deg, #fef3c7, #fde68a); color: #92400e; border-color: #fcd34d; } .tag-ai { background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857; border-color: #86efac; } .tag-portfolio { background: linear-gradient(135deg, #e0f2fe, #b3e5fc); color: #0c4a6e; border-color: #7dd3fc; } .tag-dev { background: linear-gradient(135deg, #fff1f2, #fecaca); color: #991b1b; border-color: #fca5a5; } .link { display: inline-block; background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600; margin-top: 15px; transition: all 0.3s ease; box-shadow: 0 4px 6px -1px rgba(102, 126, 234, 0.3); font-size: 0.9rem; } .link:hover { background: linear-gradient(135deg, #5a67d8, #6b46c1); transform: scale(1.05); box-shadow: 0 10px 15px -3px rgba(102, 126, 234, 0.4); } .section-title { font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 800; margin: 60px 0 30px 0; text-align: center; background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; } .description { color: #4a5568; margin-bottom: 15px; font-size: 0.9rem; line-height: 1.6; } .compact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; } .compact-card { background: white; border: 1px solid #e2e8f0; border-radius: 15px; padding: 20px; transition: all 0.3s ease; box-shadow: 0 2px 4px rgba(0,0,0,0.05); } .compact-card:hover { transform: translateY(-4px); border-color: #667eea; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); } .priority-badge { position: absolute; top: 15px; right: 15px; background: linear-gradient(135deg, #ef4444, #dc2626); color: white; padding: 4px 8px; border-radius: 8px; font-size: 0.7rem; font-weight: 700; } .cta-section { background: linear-gradient(135deg, #f0f9ff, #e0f2fe); border: 2px solid #0ea5e9; border-radius: 25px; padding: 40px; margin: 60px 0; text-align: center; position: relative; overflow: hidden; } .cta-section::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(14,165,233,0.05) 0%, transparent 70%); animation: pulse 4s ease-in-out infinite; } @keyframes pulse { 0%, 100% { transform: scale(1); opacity: 0.5; } 50% { transform: scale(1.1); opacity: 0.8; } } .cta-title { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; margin-bottom: 15px; color: #0c4a6e; } .cta-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 25px; } .last-updated { text-align: center; color: #64748b; font-size: 0.85rem; padding: 20px; background: rgba(148, 163, 184, 0.1); border-radius: 12px; margin: 40px 0; } /* Mobile Optimizations */ @media (max-width: 768px) { .container { padding: 0 10px; } .header { margin: -10px -10px 30px -10px; padding: 30px 15px; } .grid { grid-template-columns: 1fr; gap: 20px; } .compact-grid { grid-template-columns: 1fr; } .stats { grid-template-columns: repeat(3, 1fr); gap: 10px; } .stat { padding: 15px 10px; } .card { padding: 20px; } .tags { gap: 6px; } .tag { font-size: 0.7rem; padding: 3px 8px; } .cta-section { padding: 25px 15px; } .cta-buttons { flex-direction: column; align-items: center; } } @media (max-width: 480px) { .stats { grid-template-columns: 1fr; max-width: 200px; } .compact-grid { grid-template-columns: 1fr; } .card-title { font-size: 1.1rem; } } /* Print Styles */ @media print { body { background: white; } .header { background: #667eea !important; } .card { break-inside: avoid; margin-bottom: 20px; } } </style></head><body><div class="container"><div class="header"><h1>39 вакансий для Алексея</h1><div class="subtitle"> Проверенные возможности по 4 векторам развития:<br> End-to-End разработка • CDTO • AI Implementation • Архитектура </div><div class="stats"><div class="stat"><div class="stat-number">20</div><div class="stat-label">Высокий приоритет</div></div><div class="stat"><div class="stat-number">19</div><div class="stat-label">Средний приоритет</div></div><div class="stat"><div class="stat-number">6</div><div class="stat-label">Топ для заявок</div></div></div></div><!-- Топ-6 --><h2 class="section-title">🔥 Топ-6 для заявок завтра</h2><div class="grid"><div class="card"><div class="priority-badge">ТОП</div><div class="card-title">ИТ лид кластера</div><div class="card-company">СК Сбербанк страхование жизни</div><div class="score">⭐ 10/10</div><div class="tags"><span class="tag tag-portfolio">End-to-End разработка</span><span class="tag">Сбербанк</span></div><div class="description">Управление продуктовыми командами end-to-end. Именно твоя экспертиза — 90 человек в управлении.</div><a href="https://hh.ru/vacancy/131357816" target="_blank" class="link">→ Подать заявку</a></div><div class="card"><div class="priority-badge">ТОП</div><div class="card-title">Директор по цифровой трансформации в федеральную компанию</div><div class="card-company">ГЕТ ЭКСПЕРТС РЕКРУТМЕНТ</div><div class="score">⭐ 10/10</div><div class="tags"><span class="tag tag-cdto">CDTO</span><span class="tag">Федеральная компания</span></div><div class="description">Стратегия до 2030 года, Индустрия 4.0. Масштабная цифровая трансформация.</div><a href="https://hh.ru/vacancy/129555760" target="_blank" class="link">→ Подать заявку</a></div><div class="card"><div class="priority-badge">ТОП</div><div class="card-title">Директор по цифровой платформе (CDO/CDTO)</div><div class="card-company">ПОРТАЛ</div><div class="score">⭐ 10/10</div><div class="tags"><span class="tag tag-cdto">CDTO</span><span class="tag">Digital Platform</span></div><div class="description">Цифровая платформа как основа и драйвер развития бизнеса.</div><a href="https://hh.ru/vacancy/126507986" target="_blank" class="link">→ Подать заявку</a></div><div class="card"><div class="priority-badge">ТОП</div><div class="card-title">Директор по ИТ и цифровой трансформации</div><div class="card-company">Аэропорт Домодедово</div><div class="score">⭐ 10/10</div><div class="tags"><span class="tag tag-cdto">CDTO</span><span class="tag">Транспорт</span></div><div class="description">ИТ-стратегия, внедрение технологий, автоматизация процессов.</div><a href="https://hh.ru/vacancy/131459887" target="_blank" class="link">→ Подать заявку</a></div><div class="card"><div class="priority-badge">ТОП</div><div class="card-title">Директор по цифровой трансформации / CDO</div><div class="card-company">АПТЕКИ ВАША № 1</div><div class="score">⭐ 10/10</div><div class="tags"><span class="tag tag-ai">AI Implementation</span><span class="tag">Ритейл</span></div><div class="description">AI-инструменты, партнерства с AI-платформами. Твой AI-козырь!</div><a href="https://hh.ru/vacancy/121368532" target="_blank" class="link">→ Подать заявку</a></div><div class="card"><div class="priority-badge">ТОП</div><div class="card-title">Руководитель проектного офиса (заказная разработка)</div><div class="card-company">SVK.Digital</div><div class="score">⭐ 10/10</div><div class="tags"><span class="tag tag-portfolio">Portfolio Management</span><span class="tag">VK Group</span></div><div class="description">Управление портфелем проектов, экономика проектов. Твой основной профиль.</div><a href="https://hh.ru/vacancy/127021078" target="_blank" class="link">→ Подать заявку</a></div></div><!-- CTA Section --><div class="cta-section"><div class="cta-title">Готов к следующему шагу?</div><p style="color: #0c4a6e; margin-bottom: 20px; position: relative; z-index: 10;"> 6 топовых позиций ждут твоих заявок.<br> Полный список из 39 вакансий доступен ниже. </p><div class="cta-buttons"><a href="#all-vacancies" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white; padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600;"> Смотреть все 39 вакансий </a><a href="#executive-search" style="background: white; color: #0ea5e9; padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600; border: 2px solid #0ea5e9;"> База Executive Search </a></div></div><!-- НОВЫЕ ВАКАНСИИ --><h2 class="section-title">🆕 Новые вакансии (последние 24 часа)</h2><div class="compact-grid"><div class="compact-card" style="border: 2px solid #10b981;"><div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;"><div class="card-title" style="font-size: 1.1rem;">Начальник управления анализа и развития процессов взыскания</div><div class="score">⭐ 7/10</div></div><div class="card-company">МТС Банк</div><div class="tags"><span class="tag">Новая</span><span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span></div><a href="https://hh.ru/vacancy/131460945" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card" style="border: 2px solid #10b981;"><div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;"><div class="card-title" style="font-size: 1.1rem;">Владелец продукта</div><div class="score">⭐ 7/10</div></div><div class="card-company">СДМ-Банк, (ПАО)</div><div class="tags"><span class="tag">Новая</span><span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span></div><a href="https://hh.ru/vacancy/130324548" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card" style="border: 2px solid #10b981;"><div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;"><div class="card-title" style="font-size: 1.1rem;">Владелец продукта</div><div class="score">⭐ 7/10</div></div><div class="card-company">iiko, Компания Айко</div><div class="tags"><span class="tag">Новая</span><span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span></div><a href="https://hh.ru/vacancy/131122299" target="_blank" class="link">→ Подать заявку</a></div></div><!-- НОВЫЕ ВАКАНСИИ --><h2 class="section-title">🆕 Новые вакансии (последние 24 часа)</h2><div class="compact-grid"><div class="compact-card" style="border: 2px solid #10b981;"><div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;"><div class="card-title" style="font-size: 1.1rem;">Владелец продукта (РО) "ВЭД консалтинг" в стриме "ВЭД"</div><div class="score">⭐ 7/10</div></div><div class="card-company">Банк ВТБ (ПАО)</div><div class="tags"><span class="tag">Новая</span><span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span></div><a href="https://hh.ru/vacancy/127111467" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card" style="border: 2px solid #10b981;"><div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;"><div class="card-title" style="font-size: 1.1rem;">Product Owner / Владелец продукта (B2B SaaS)</div><div class="score">⭐ 7/10</div></div><div class="card-company">Продуман</div><div class="tags"><span class="tag">Новая</span><span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span></div><a href="https://hh.ru/vacancy/131037012" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card" style="border: 2px solid #10b981;"><div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;"><div class="card-title" style="font-size: 1.1rem;">ИТ-Партнер/Владелец продукта (HR процессы)</div><div class="score">⭐ 6/10</div></div><div class="card-company">Правительство Москвы</div><div class="tags"><span class="tag">Новая</span><span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span></div><a href="https://hh.ru/vacancy/131132523" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card" style="border: 2px solid #10b981;"><div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;"><div class="card-title" style="font-size: 1.1rem;">Владелец продукта (проект "Рабочая сила")</div><div class="score">⭐ 6/10</div></div><div class="card-company">СБЕР</div><div class="tags"><span class="tag tag-portfolio">Portfolio</span><span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span></div><a href="https://hh.ru/vacancy/131520143" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card" style="border: 2px solid #10b981;"><div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;"><div class="card-title" style="font-size: 1.1rem;">Владелец продукта в команду Цифровых платежных сервисов</div><div class="score">⭐ 6/10</div></div><div class="card-company">Банк ДОМ.РФ</div><div class="tags"><span class="tag">Новая</span><span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span></div><a href="https://hh.ru/vacancy/131497717" target="_blank" class="link">→ Подать заявку</a></div></div><!-- НОВЫЕ ВАКАНСИИ --><h2 class="section-title">🆕 Новые вакансии (последние 24 часа)</h2><div class="compact-grid"><div class="compact-card" style="border: 2px solid #10b981;"><div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;"><div class="card-title" style="font-size: 1.1rem;">Владелец продукта (РО) "ВЭД консалтинг" в стриме "ВЭД"</div><div class="score">⭐ 7/10</div></div><div class="card-company">Банк ВТБ (ПАО)</div><div class="tags"><span class="tag">Новая</span><span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span></div><a href="https://hh.ru/vacancy/127111467" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card" style="border: 2px solid #10b981;"><div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;"><div class="card-title" style="font-size: 1.1rem;">Product Owner / Владелец продукта (B2B SaaS)</div><div class="score">⭐ 7/10</div></div><div class="card-company">Продуман</div><div class="tags"><span class="tag">Новая</span><span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span></div><a href="https://hh.ru/vacancy/131037012" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card" style="border: 2px solid #10b981;"><div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;"><div class="card-title" style="font-size: 1.1rem;">ИТ-Партнер/Владелец продукта (HR процессы)</div><div class="score">⭐ 6/10</div></div><div class="card-company">Правительство Москвы</div><div class="tags"><span class="tag">Новая</span><span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span></div><a href="https://hh.ru/vacancy/131132523" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card" style="border: 2px solid #10b981;"><div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;"><div class="card-title" style="font-size: 1.1rem;">Владелец продукта (проект "Рабочая сила")</div><div class="score">⭐ 6/10</div></div><div class="card-company">СБЕР</div><div class="tags"><span class="tag tag-portfolio">Portfolio</span><span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span></div><a href="https://hh.ru/vacancy/131520143" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card" style="border: 2px solid #10b981;"><div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;"><div class="card-title" style="font-size: 1.1rem;">Владелец продукта в команду Цифровых платежных сервисов</div><div class="score">⭐ 6/10</div></div><div class="card-company">Банк ДОМ.РФ</div><div class="tags"><span class="tag">Новая</span><span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span></div><a href="https://hh.ru/vacancy/131497717" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card" style="border: 2px solid #10b981;"><div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;"><div class="card-title" style="font-size: 1.1rem;">Начальник управления судебного взыскания задолженности WB bank</div><div class="score">⭐ 6/10</div></div><div class="card-company">RWB (Wildberries & Russ)</div><div class="tags"><span class="tag">Новая</span><span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span></div><a href="https://hh.ru/vacancy/131522126" target="_blank" class="link">→ Подать заявку</a></div></div><!-- Остальные высокого приоритета --><h2 id="all-vacancies" class="section-title">🔥 Остальные высокого приоритета (14 вакансий)</h2><div class="compact-grid"><div class="compact-card"><div class="card-title" style="font-size: 1.1rem;">Начальник управления анализа и развития процессов</div><div class="card-company">МТС Банк</div><div class="score">⭐ 10/10</div><div class="tags"><span class="tag tag-portfolio">Portfolio Management</span></div><a href="https://hh.ru/vacancy/131460945" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card"><div class="card-title" style="font-size: 1.1rem;">Заместитель директора по цифровой трансформации (200k)</div><div class="card-company">Мособлгаз</div><div class="score">⭐ 10/10</div><div class="tags"><span class="tag tag-cdto">Digital Transformation</span></div><a href="https://hh.ru/vacancy/131389603" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card"><div class="card-title" style="font-size: 1.1rem;">Владелец продукта</div><div class="card-company">МТС Банк</div><div class="score">⭐ 10/10</div><div class="tags"><span class="tag tag-portfolio">Product Management</span></div><a href="https://hh.ru/vacancy/131384127" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card"><div class="card-title" style="font-size: 1.1rem;">Менеджер проектов (цифровые продукты)</div><div class="card-company">МТС</div><div class="score">⭐ 10/10</div><div class="tags"><span class="tag tag-portfolio">Digital Products</span></div><a href="https://hh.ru/vacancy/130817608" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card"><div class="card-title" style="font-size: 1.1rem;">Руководитель центра B2B продаж</div><div class="card-company">МТС</div><div class="score">⭐ 10/10</div><div class="tags"><span class="tag">Digital Platforms</span></div><a href="https://hh.ru/vacancy/130652364" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card"><div class="card-title" style="font-size: 1.1rem;">Директор по экономическому анализу</div><div class="card-company">МТС Банк</div><div class="score">⭐ 10/10</div><div class="tags"><span class="tag">Analytics</span></div><a href="https://hh.ru/vacancy/130949470" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card"><div class="card-title" style="font-size: 1.1rem;">Заместитель директора по цифровой трансформации (160k)</div><div class="card-company">Мособлгаз</div><div class="score">⭐ 10/10</div><div class="tags"><span class="tag tag-cdto">Digital Portfolio</span></div><a href="https://hh.ru/vacancy/131410457" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card"><div class="card-title" style="font-size: 1.1rem;">Ведущий инженер Cloud Platform</div><div class="card-company">МТС</div><div class="score">⭐ 10/10</div><div class="tags"><span class="tag">Platform Architecture</span></div><a href="https://hh.ru/vacancy/131457907" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card"><div class="card-title" style="font-size: 1.1rem;">Руководитель проекта BI-платформы</div><div class="card-company">ДОМИНАНТ ГК</div><div class="score">⭐ 9/10</div><div class="tags"><span class="tag">Analytics Platform</span></div><a href="https://hh.ru/vacancy/131330299" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card"><div class="card-title" style="font-size: 1.1rem;">Начальник отдела цифровой трансформации ФАС</div><div class="card-company">ФБУ ИТЦ ФАС России</div><div class="score" style="background: linear-gradient(135deg, #f59e0b, #d97706);">⭐ 8/10</div><div class="tags"><span class="tag">Government Digital</span></div><a href="https://hh.ru/vacancy/131450497" target="_blank" class="link">→ Подать заявку</a></div></div><!-- Средний приоритет --><h2 class="section-title">📋 Средний приоритет (топ-10 из 19)</h2><div class="compact-grid"><div class="compact-card"><div class="card-title" style="font-size: 1.1rem;">Технический директор/Директор по разработке</div><div class="card-company">Ростелеком</div><div class="score score-medium">⭐ 6/10</div><div class="tags"><span class="tag tag-dev">Development</span></div><a href="https://hh.ru/vacancy/131453564" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card"><div class="card-title" style="font-size: 1.1rem;">CTO / Chief technology officer</div><div class="card-company">IT SCOUT</div><div class="score score-medium">⭐ 6/10</div><div class="tags"><span class="tag tag-dev">CTO</span></div><a href="https://hh.ru/vacancy/131483833" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card"><div class="card-title" style="font-size: 1.1rem;">Технический директор в международный стартап</div><div class="card-company">6-12k USD</div><div class="score score-medium">⭐ 6/10</div><div class="tags"><span class="tag">International CTO</span></div><a href="https://hh.ru/vacancy/130976357" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card"><div class="card-title" style="font-size: 1.1rem;">Директор по ИТ (CIO)</div><div class="card-company">Остров Мечты</div><div class="score score-medium">⭐ 6/10</div><div class="tags"><span class="tag">IT Strategy</span></div><a href="https://hh.ru/vacancy/131396611" target="_blank" class="link">→ Подать заявку</a></div><div class="compact-card"><div class="card-title" style="font-size: 1.1rem;">Team Lead Python</div><div class="card-company">X5 Tech</div><div class="score score-medium">⭐ 6/10</div><div class="tags"><span class="tag tag-dev">Development</span></div><a href="https://hh.ru/vacancy/129613998" target="_blank" class="link">→ Подать заявку</a></div></div><!-- Итого --><!-- Executive Search База --><h2 id="executive-search" class="section-title">📞 Executive Search База</h2><p style="text-align: center; color: #64748b; margin-bottom: 30px;"> 18 проверенных агентств для CDTO/IT Directors позиций </p><!-- Топ-5 агентств --><div style="background: linear-gradient(135deg, #fef3c7, #fde68a); border: 2px solid #f59e0b; border-radius: 20px; padding: 25px; margin-bottom: 30px;"><h3 style="color: #92400e; font-size: 1.4rem; font-weight: 700; text-align: center; margin-bottom: 20px;"> 🔥 ТОП-5 ПРИОРИТЕТ (звонить завтра) </h3><div class="compact-grid"><div style="background: white; padding: 20px; border-radius: 15px; border: 2px solid #dc2626;"><div style="font-weight: 700; color: #1a202c; margin-bottom: 8px;">CT Executive Search</div><div style="color: #64748b; font-size: 0.9rem; margin-bottom: 12px;">CTO, CDTO, IT Directors</div><div style="font-weight: 600; color: #dc2626; margin-bottom: 8px;">📞 +7 499 678 2111</div><div style="font-size: 0.85rem; color: #4a5568;">Москва, Шлюзовая наб. 8,1</div></div><div style="background: white; padding: 20px; border-radius: 15px; border: 2px solid #dc2626;"><div style="font-weight: 700; color: #1a202c; margin-bottom: 8px;">MChoice Executive</div><div style="color: #64748b; font-size: 0.9rem; margin-bottom: 12px;">#1 в России по C-level IT</div><div style="font-weight: 600; color: #dc2626; margin-bottom: 8px;">🌐 m-choice.com</div><div style="font-size: 0.85rem; color: #4a5568;">Лидер рынка executive search</div></div><div style="background: white; padding: 20px; border-radius: 15px; border: 2px solid #dc2626;"><div style="font-weight: 700; color: #1a202c; margin-bottom: 8px;">Spencer Stuart</div><div style="color: #64748b; font-size: 0.9rem; margin-bottom: 12px;">Глобальный лидер, CxO уровень</div><div style="font-weight: 600; color: #dc2626; margin-bottom: 8px;">📞 +7 495 797 3939</div><div style="font-size: 0.85rem; color: #4a5568;">Fortune 500, крупные корпорации</div></div><div style="background: white; padding: 20px; border-radius: 15px; border: 2px solid #dc2626;"><div style="font-weight: 700; color: #1a202c; margin-bottom: 8px;">Korn Ferry</div><div style="color: #64748b; font-size: 0.9rem; margin-bottom: 12px;">CTO, CDTO, Digital Officers</div><div style="font-weight: 600; color: #dc2626; margin-bottom: 8px;">📞 +7 495 721 3030</div><div style="font-size: 0.85rem; color: #4a5568;">Москва, Оружейный пер. 25</div></div><div style="background: white; padding: 20px; border-radius: 15px; border: 2px solid #dc2626;"><div style="font-weight: 700; color: #1a202c; margin-bottom: 8px;">Heidrick & Struggles</div><div style="color: #64748b; font-size: 0.9rem; margin-bottom: 12px;">Technology Practice</div><div style="font-weight: 600; color: #dc2626; margin-bottom: 8px;">📞 +7 495 721 3333</div><div style="font-size: 0.85rem; color: #4a5568;">Москва, ул. Льва Толстого 18/1</div></div></div></div><!-- Остальные агентства --><div style="background: rgba(148, 163, 184, 0.1); padding: 20px; border-radius: 15px; margin-bottom: 30px;"><h4 style="color: #374151; font-weight: 600; margin-bottom: 15px;">📋 Специализированные IT-агентства (13 агентств):</h4><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; font-size: 0.9rem;"><div>• <strong>Talent Partners</strong> — talentpartners.ru</div><div>• <strong>IT Headhunters</strong> — itheadhunters.ru</div><div>• <strong>Digital Executive</strong> — CDTO, AI roles</div><div>• <strong>Russell Reynolds</strong> — глобальный</div><div>• <strong>Egon Zehnder</strong> — премиум</div><div>• <strong>Ward Howell</strong> — Москва</div><div>• <strong>PROMAN</strong> — IT специализация</div><div>• <strong>ANCOR</strong> — executive search</div><div>• <strong>Coleman Services</strong> — IT роли</div><div>• <strong>STAFF SERVICE</strong> — директора</div><div>• <strong>Амплуа</strong> — executive поиск</div><div>• <strong>CORNERSTONE</strong> — C-level</div><div>• <strong>Blackwood</strong> — CTO search</div></div></div><!-- Стратегия --><div style="background: linear-gradient(135deg, #e0f2fe, #b3e5fc); border: 2px solid #0ea5e9; border-radius: 20px; padding: 25px; margin-bottom: 30px;"><h4 style="color: #0c4a6e; font-weight: 700; text-align: center; margin-bottom: 15px;"> 💡 Стратегия работы с Executive Search </h4><div style="color: #0c4a6e; text-align: center;"><strong>Последовательность:</strong><br> 1️⃣ Звони в топ-5 (CT Executive, MChoice, Spencer Stuart, Korn Ferry, Heidrick)<br> 2️⃣ Упоминай: 90 человек в команде, 500 млн руб экономэффект, AI-экспертиза<br> 3️⃣ Отправляй персонализированное резюме на каждое агентство<br> 4️⃣ Подчеркивай CDTO/Digital Transformation как основной вектор </div></div><div class="last-updated"><strong>✅ Все 39 вакансий проверены и активны</strong><br> Последнее обновление: 25.03.2026 06:02<br> 🎯 Автообновление: ежедневно в 09:00 МСК </div></div><script> // Smooth scroll for anchor links document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function (e) { e.preventDefault(); const target = document.querySelector(this.getAttribute('href')); if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); }); // Add loading animation to external links document.querySelectorAll('a[target="_blank"]').forEach(link => { link.addEventListener('click', function() { this.style.opacity = '0.6'; this.innerHTML = '⏳ Открываю...'; setTimeout(() => { this.style.opacity = '1'; this.innerHTML = '→ Подать заявку'; }, 1500); }); }); </script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>47 вакансий Алексея Титова</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'SF Pro Display', sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            color: #1a202c;
+            line-height: 1.6;
+            padding: 10px;
+            min-height: 100vh;
+        }
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 15px; }
+        
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            margin: -10px -15px 40px -15px;
+            border-radius: 0 0 25px 25px;
+        }
+        
+        h1 { 
+            font-size: clamp(2rem, 5vw, 4rem); 
+            font-weight: 700; 
+            margin-bottom: 15px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            opacity: 0.95;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        
+        .stats { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 20px; 
+            margin: 30px 0;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .stat { 
+            background: rgba(255,255,255,0.15); 
+            backdrop-filter: blur(10px);
+            padding: 20px; 
+            border-radius: 20px; 
+            text-align: center; 
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .stat-number { 
+            font-size: clamp(2rem, 4vw, 3rem); 
+            font-weight: 800; 
+            color: #fbbf24;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+        
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+            gap: 25px; 
+            margin: 40px 0; 
+        }
+        
+        .card { 
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 20px; 
+            padding: 25px; 
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+        
+        .card:hover { 
+            transform: translateY(-8px); 
+            border-color: #667eea;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .card-title { 
+            font-size: clamp(1.1rem, 2vw, 1.3rem); 
+            font-weight: 700; 
+            margin-bottom: 12px; 
+            color: #1a202c;
+            line-height: 1.4;
+        }
+        
+        .card-company { 
+            color: #64748b; 
+            margin-bottom: 15px; 
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        
+        .score { 
+            display: inline-block; 
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white; 
+            padding: 6px 14px; 
+            border-radius: 25px; 
+            font-weight: 700; 
+            font-size: 0.85rem; 
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.3);
+        }
+        
+        .score-medium {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.3);
+        }
+        
+        .tags { 
+            display: flex; 
+            gap: 8px; 
+            margin-bottom: 15px; 
+            flex-wrap: wrap; 
+        }
+        
+        .tag { 
+            background: linear-gradient(135deg, #ede9fe, #ddd6fe);
+            color: #6d28d9; 
+            padding: 4px 12px; 
+            border-radius: 15px; 
+            font-size: 0.75rem; 
+            font-weight: 600;
+            border: 1px solid #c4b5fd;
+        }
+        
+        .tag-cdto { background: linear-gradient(135deg, #fef3c7, #fde68a); color: #92400e; border-color: #fcd34d; }
+        .tag-ai { background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857; border-color: #86efac; }
+        .tag-portfolio { background: linear-gradient(135deg, #e0f2fe, #b3e5fc); color: #0c4a6e; border-color: #7dd3fc; }
+        .tag-dev { background: linear-gradient(135deg, #fff1f2, #fecaca); color: #991b1b; border-color: #fca5a5; }
+        
+        .link { 
+            display: inline-block; 
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white; 
+            padding: 12px 24px; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            margin-top: 15px; 
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(102, 126, 234, 0.3);
+            font-size: 0.9rem;
+        }
+        
+        .link:hover { 
+            background: linear-gradient(135deg, #5a67d8, #6b46c1);
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(102, 126, 234, 0.4);
+        }
+        
+        .section-title { 
+            font-size: clamp(1.8rem, 4vw, 2.5rem); 
+            font-weight: 800; 
+            margin: 60px 0 30px 0; 
+            text-align: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .description { 
+            color: #4a5568; 
+            margin-bottom: 15px; 
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        .compact-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px; 
+        }
+        
+        .compact-card { 
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 15px; 
+            padding: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .compact-card:hover {
+            transform: translateY(-4px);
+            border-color: #667eea;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .priority-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 8px;
+            font-size: 0.7rem;
+            font-weight: 700;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            border: 2px solid #0ea5e9;
+            border-radius: 25px;
+            padding: 40px;
+            margin: 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(14,165,233,0.05) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        
+        .cta-title {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: #0c4a6e;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+        
+        .last-updated {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.85rem;
+            padding: 20px;
+            background: rgba(148, 163, 184, 0.1);
+            border-radius: 12px;
+            margin: 40px 0;
+        }
+        
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .container { padding: 0 10px; }
+            .header { margin: -10px -10px 30px -10px; padding: 30px 15px; }
+            .grid { grid-template-columns: 1fr; gap: 20px; }
+            .compact-grid { grid-template-columns: 1fr; }
+            .stats { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+            .stat { padding: 15px 10px; }
+            .card { padding: 20px; }
+            .tags { gap: 6px; }
+            .tag { font-size: 0.7rem; padding: 3px 8px; }
+            .cta-section { padding: 25px 15px; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+        }
+        
+        @media (max-width: 480px) {
+            .stats { grid-template-columns: 1fr; max-width: 200px; }
+            .compact-grid { grid-template-columns: 1fr; }
+            .card-title { font-size: 1.1rem; }
+        }
+        
+        /* Print Styles */
+        @media print {
+            body { background: white; }
+            .header { background: #667eea !important; }
+            .card { break-inside: avoid; margin-bottom: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>47 вакансий для Алексея</h1>
+        <div class="subtitle">
+            Проверенные возможности по 4 векторам развития:<br>
+            End-to-End разработка • CDTO • AI Implementation • Архитектура
+        </div>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">20</div>
+                <div class="stat-label">Высокий приоритет</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">19</div>
+                <div class="stat-label">Средний приоритет</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Топ для заявок</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Топ-6 -->
+    <h2 class="section-title">🔥 Топ-6 для заявок завтра</h2>
+    
+    <div class="grid">
+        <div class="card">
+            <div class="priority-badge">ТОП</div>
+            <div class="card-title">ИТ лид кластера</div>
+            <div class="card-company">СК Сбербанк страхование жизни</div>
+            <div class="score">⭐ 10/10</div>
+            <div class="tags">
+                <span class="tag tag-portfolio">End-to-End разработка</span>
+                <span class="tag">Сбербанк</span>
+            </div>
+            <div class="description">Управление продуктовыми командами end-to-end. Именно твоя экспертиза — 90 человек в управлении.</div>
+            <a href="https://hh.ru/vacancy/131357816" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+
+        <div class="card">
+            <div class="priority-badge">ТОП</div>
+            <div class="card-title">Директор по цифровой трансформации в федеральную компанию</div>
+            <div class="card-company">ГЕТ ЭКСПЕРТС РЕКРУТМЕНТ</div>
+            <div class="score">⭐ 10/10</div>
+            <div class="tags">
+                <span class="tag tag-cdto">CDTO</span>
+                <span class="tag">Федеральная компания</span>
+            </div>
+            <div class="description">Стратегия до 2030 года, Индустрия 4.0. Масштабная цифровая трансформация.</div>
+            <a href="https://hh.ru/vacancy/129555760" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+
+        <div class="card">
+            <div class="priority-badge">ТОП</div>
+            <div class="card-title">Директор по цифровой платформе (CDO/CDTO)</div>
+            <div class="card-company">ПОРТАЛ</div>
+            <div class="score">⭐ 10/10</div>
+            <div class="tags">
+                <span class="tag tag-cdto">CDTO</span>
+                <span class="tag">Digital Platform</span>
+            </div>
+            <div class="description">Цифровая платформа как основа и драйвер развития бизнеса.</div>
+            <a href="https://hh.ru/vacancy/126507986" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+
+        <div class="card">
+            <div class="priority-badge">ТОП</div>
+            <div class="card-title">Директор по ИТ и цифровой трансформации</div>
+            <div class="card-company">Аэропорт Домодедово</div>
+            <div class="score">⭐ 10/10</div>
+            <div class="tags">
+                <span class="tag tag-cdto">CDTO</span>
+                <span class="tag">Транспорт</span>
+            </div>
+            <div class="description">ИТ-стратегия, внедрение технологий, автоматизация процессов.</div>
+            <a href="https://hh.ru/vacancy/131459887" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+
+        <div class="card">
+            <div class="priority-badge">ТОП</div>
+            <div class="card-title">Директор по цифровой трансформации / CDO</div>
+            <div class="card-company">АПТЕКИ ВАША № 1</div>
+            <div class="score">⭐ 10/10</div>
+            <div class="tags">
+                <span class="tag tag-ai">AI Implementation</span>
+                <span class="tag">Ритейл</span>
+            </div>
+            <div class="description">AI-инструменты, партнерства с AI-платформами. Твой AI-козырь!</div>
+            <a href="https://hh.ru/vacancy/121368532" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+
+        <div class="card">
+            <div class="priority-badge">ТОП</div>
+            <div class="card-title">Руководитель проектного офиса (заказная разработка)</div>
+            <div class="card-company">SVK.Digital</div>
+            <div class="score">⭐ 10/10</div>
+            <div class="tags">
+                <span class="tag tag-portfolio">Portfolio Management</span>
+                <span class="tag">VK Group</span>
+            </div>
+            <div class="description">Управление портфелем проектов, экономика проектов. Твой основной профиль.</div>
+            <a href="https://hh.ru/vacancy/127021078" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="cta-section">
+        <div class="cta-title">Готов к следующему шагу?</div>
+        <p style="color: #0c4a6e; margin-bottom: 20px; position: relative; z-index: 10;">
+            6 топовых позиций ждут твоих заявок.<br>
+            Полный список из 47 вакансий доступен ниже.
+        </p>
+        <div class="cta-buttons">
+            <a href="#all-vacancies" style="background: linear-gradient(135deg, #0ea5e9, #0284c7); color: white; padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600;">
+                Смотреть все 47 вакансий
+            </a>
+            <a href="#executive-search" style="background: white; color: #0ea5e9; padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600; border: 2px solid #0ea5e9;">
+                База Executive Search
+            </a>
+        </div>
+    </div>
+
+    <!-- НОВЫЕ ВАКАНСИИ -->
+<h2 class="section-title">🆕 Новые вакансии (последние 24 часа)</h2>
+<div class="compact-grid">
+
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">Начальник управления анализа и развития процессов взыскания</div>
+            <div class="score">⭐ 7/10</div>
+        </div>
+        <div class="card-company">МТС Банк</div>
+        <div class="tags">
+            <span class="tag">Новая</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/131460945" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">Владелец продукта</div>
+            <div class="score">⭐ 7/10</div>
+        </div>
+        <div class="card-company">СДМ-Банк, (ПАО)</div>
+        <div class="tags">
+            <span class="tag">Новая</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/130324548" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">Владелец продукта</div>
+            <div class="score">⭐ 7/10</div>
+        </div>
+        <div class="card-company">iiko, Компания Айко</div>
+        <div class="tags">
+            <span class="tag">Новая</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/131122299" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            </div>
+
+<!-- НОВЫЕ ВАКАНСИИ -->
+<h2 class="section-title">🆕 Новые вакансии (последние 24 часа)</h2>
+<div class="compact-grid">
+
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">Владелец продукта (РО) "ВЭД консалтинг" в стриме "ВЭД"</div>
+            <div class="score">⭐ 7/10</div>
+        </div>
+        <div class="card-company">Банк ВТБ (ПАО)</div>
+        <div class="tags">
+            <span class="tag">Новая</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/127111467" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">Product Owner / Владелец продукта (B2B SaaS)</div>
+            <div class="score">⭐ 7/10</div>
+        </div>
+        <div class="card-company">Продуман</div>
+        <div class="tags">
+            <span class="tag">Новая</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/131037012" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">ИТ-Партнер/Владелец продукта (HR процессы)</div>
+            <div class="score">⭐ 6/10</div>
+        </div>
+        <div class="card-company">Правительство Москвы</div>
+        <div class="tags">
+            <span class="tag">Новая</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/131132523" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">Владелец продукта (проект "Рабочая сила")</div>
+            <div class="score">⭐ 6/10</div>
+        </div>
+        <div class="card-company">СБЕР</div>
+        <div class="tags">
+            <span class="tag tag-portfolio">Portfolio</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/131520143" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">Владелец продукта в команду Цифровых платежных сервисов</div>
+            <div class="score">⭐ 6/10</div>
+        </div>
+        <div class="card-company">Банк ДОМ.РФ</div>
+        <div class="tags">
+            <span class="tag">Новая</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/131497717" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            </div>
+
+<!-- НОВЫЕ ВАКАНСИИ -->
+<h2 class="section-title">🆕 Новые вакансии (последние 24 часа)</h2>
+<div class="compact-grid">
+
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">Владелец продукта (РО) "ВЭД консалтинг" в стриме "ВЭД"</div>
+            <div class="score">⭐ 7/10</div>
+        </div>
+        <div class="card-company">Банк ВТБ (ПАО)</div>
+        <div class="tags">
+            <span class="tag">Новая</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/127111467" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">Product Owner / Владелец продукта (B2B SaaS)</div>
+            <div class="score">⭐ 7/10</div>
+        </div>
+        <div class="card-company">Продуман</div>
+        <div class="tags">
+            <span class="tag">Новая</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/131037012" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">ИТ-Партнер/Владелец продукта (HR процессы)</div>
+            <div class="score">⭐ 6/10</div>
+        </div>
+        <div class="card-company">Правительство Москвы</div>
+        <div class="tags">
+            <span class="tag">Новая</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/131132523" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">Владелец продукта (проект "Рабочая сила")</div>
+            <div class="score">⭐ 6/10</div>
+        </div>
+        <div class="card-company">СБЕР</div>
+        <div class="tags">
+            <span class="tag tag-portfolio">Portfolio</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/131520143" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">Владелец продукта в команду Цифровых платежных сервисов</div>
+            <div class="score">⭐ 6/10</div>
+        </div>
+        <div class="card-company">Банк ДОМ.РФ</div>
+        <div class="tags">
+            <span class="tag">Новая</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/131497717" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">Начальник управления судебного взыскания задолженности WB bank</div>
+            <div class="score">⭐ 6/10</div>
+        </div>
+        <div class="card-company">RWB (Wildberries & Russ)</div>
+        <div class="tags">
+            <span class="tag">Новая</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/131522126" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            </div>
+
+<!-- НОВЫЕ ВАКАНСИИ -->
+<h2 class="section-title">🆕 Новые вакансии (последние 24 часа)</h2>
+<div class="compact-grid">
+
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">Владелец продукта (РО) "ВЭД консалтинг" в стриме "ВЭД"</div>
+            <div class="score">⭐ 7/10</div>
+        </div>
+        <div class="card-company">Банк ВТБ (ПАО)</div>
+        <div class="tags">
+            <span class="tag">Новая</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/127111467" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">Product Owner / Владелец продукта (B2B SaaS)</div>
+            <div class="score">⭐ 7/10</div>
+        </div>
+        <div class="card-company">Продуман</div>
+        <div class="tags">
+            <span class="tag">Новая</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/131037012" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">Директор по цифровой платформе (CDO / CDTO / Head of Digital)</div>
+            <div class="score">⭐ 6/10</div>
+        </div>
+        <div class="card-company">ПОРТАЛ</div>
+        <div class="tags">
+            <span class="tag tag-cdto">CDTO</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/126507986" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">Руководитель направления в Центр аналитики Daily</div>
+            <div class="score">⭐ 6/10</div>
+        </div>
+        <div class="card-company">МТС Банк</div>
+        <div class="tags">
+            <span class="tag tag-ai">AI/Analytics</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/131532881" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">Владелец продукта (проект "Рабочая сила")</div>
+            <div class="score">⭐ 6/10</div>
+        </div>
+        <div class="card-company">СБЕР</div>
+        <div class="tags">
+            <span class="tag tag-portfolio">Portfolio</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/131520143" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            
+    <div class="compact-card" style="border: 2px solid #10b981;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+            <div class="card-title" style="font-size: 1.1rem;">ИТ-Партнер/Владелец продукта (HR процессы)</div>
+            <div class="score">⭐ 6/10</div>
+        </div>
+        <div class="card-company">Правительство Москвы</div>
+        <div class="tags">
+            <span class="tag">Новая</span>
+            <span class="tag" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #047857;">НОВАЯ</span>
+        </div>
+        <a href="https://hh.ru/vacancy/131132523" target="_blank" class="link">→ Подать заявку</a>
+    </div>
+            </div>
+
+<!-- Остальные высокого приоритета -->
+    <h2 id="all-vacancies" class="section-title">🔥 Остальные высокого приоритета (14 вакансий)</h2>
+    
+    <div class="compact-grid">
+        <div class="compact-card">
+            <div class="card-title" style="font-size: 1.1rem;">Начальник управления анализа и развития процессов</div>
+            <div class="card-company">МТС Банк</div>
+            <div class="score">⭐ 10/10</div>
+            <div class="tags">
+                <span class="tag tag-portfolio">Portfolio Management</span>
+            </div>
+            <a href="https://hh.ru/vacancy/131460945" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+
+        <div class="compact-card">
+            <div class="card-title" style="font-size: 1.1rem;">Заместитель директора по цифровой трансформации (200k)</div>
+            <div class="card-company">Мособлгаз</div>
+            <div class="score">⭐ 10/10</div>
+            <div class="tags">
+                <span class="tag tag-cdto">Digital Transformation</span>
+            </div>
+            <a href="https://hh.ru/vacancy/131389603" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+
+        <div class="compact-card">
+            <div class="card-title" style="font-size: 1.1rem;">Владелец продукта</div>
+            <div class="card-company">МТС Банк</div>
+            <div class="score">⭐ 10/10</div>
+            <div class="tags">
+                <span class="tag tag-portfolio">Product Management</span>
+            </div>
+            <a href="https://hh.ru/vacancy/131384127" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+
+        <div class="compact-card">
+            <div class="card-title" style="font-size: 1.1rem;">Менеджер проектов (цифровые продукты)</div>
+            <div class="card-company">МТС</div>
+            <div class="score">⭐ 10/10</div>
+            <div class="tags">
+                <span class="tag tag-portfolio">Digital Products</span>
+            </div>
+            <a href="https://hh.ru/vacancy/130817608" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+
+        <div class="compact-card">
+            <div class="card-title" style="font-size: 1.1rem;">Руководитель центра B2B продаж</div>
+            <div class="card-company">МТС</div>
+            <div class="score">⭐ 10/10</div>
+            <div class="tags">
+                <span class="tag">Digital Platforms</span>
+            </div>
+            <a href="https://hh.ru/vacancy/130652364" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+
+        <div class="compact-card">
+            <div class="card-title" style="font-size: 1.1rem;">Директор по экономическому анализу</div>
+            <div class="card-company">МТС Банк</div>
+            <div class="score">⭐ 10/10</div>
+            <div class="tags">
+                <span class="tag">Analytics</span>
+            </div>
+            <a href="https://hh.ru/vacancy/130949470" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+
+        <div class="compact-card">
+            <div class="card-title" style="font-size: 1.1rem;">Заместитель директора по цифровой трансформации (160k)</div>
+            <div class="card-company">Мособлгаз</div>
+            <div class="score">⭐ 10/10</div>
+            <div class="tags">
+                <span class="tag tag-cdto">Digital Portfolio</span>
+            </div>
+            <a href="https://hh.ru/vacancy/131410457" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+
+        <div class="compact-card">
+            <div class="card-title" style="font-size: 1.1rem;">Ведущий инженер Cloud Platform</div>
+            <div class="card-company">МТС</div>
+            <div class="score">⭐ 10/10</div>
+            <div class="tags">
+                <span class="tag">Platform Architecture</span>
+            </div>
+            <a href="https://hh.ru/vacancy/131457907" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+
+        <div class="compact-card">
+            <div class="card-title" style="font-size: 1.1rem;">Руководитель проекта BI-платформы</div>
+            <div class="card-company">ДОМИНАНТ ГК</div>
+            <div class="score">⭐ 9/10</div>
+            <div class="tags">
+                <span class="tag">Analytics Platform</span>
+            </div>
+            <a href="https://hh.ru/vacancy/131330299" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+
+        <div class="compact-card">
+            <div class="card-title" style="font-size: 1.1rem;">Начальник отдела цифровой трансформации ФАС</div>
+            <div class="card-company">ФБУ ИТЦ ФАС России</div>
+            <div class="score" style="background: linear-gradient(135deg, #f59e0b, #d97706);">⭐ 8/10</div>
+            <div class="tags">
+                <span class="tag">Government Digital</span>
+            </div>
+            <a href="https://hh.ru/vacancy/131450497" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+    </div>
+
+    <!-- Средний приоритет -->
+    <h2 class="section-title">📋 Средний приоритет (топ-10 из 19)</h2>
+    
+    <div class="compact-grid">
+        <div class="compact-card">
+            <div class="card-title" style="font-size: 1.1rem;">Технический директор/Директор по разработке</div>
+            <div class="card-company">Ростелеком</div>
+            <div class="score score-medium">⭐ 6/10</div>
+            <div class="tags">
+                <span class="tag tag-dev">Development</span>
+            </div>
+            <a href="https://hh.ru/vacancy/131453564" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+
+        <div class="compact-card">
+            <div class="card-title" style="font-size: 1.1rem;">CTO / Chief technology officer</div>
+            <div class="card-company">IT SCOUT</div>
+            <div class="score score-medium">⭐ 6/10</div>
+            <div class="tags">
+                <span class="tag tag-dev">CTO</span>
+            </div>
+            <a href="https://hh.ru/vacancy/131483833" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+
+        <div class="compact-card">
+            <div class="card-title" style="font-size: 1.1rem;">Технический директор в международный стартап</div>
+            <div class="card-company">6-12k USD</div>
+            <div class="score score-medium">⭐ 6/10</div>
+            <div class="tags">
+                <span class="tag">International CTO</span>
+            </div>
+            <a href="https://hh.ru/vacancy/130976357" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+
+        <div class="compact-card">
+            <div class="card-title" style="font-size: 1.1rem;">Директор по ИТ (CIO)</div>
+            <div class="card-company">Остров Мечты</div>
+            <div class="score score-medium">⭐ 6/10</div>
+            <div class="tags">
+                <span class="tag">IT Strategy</span>
+            </div>
+            <a href="https://hh.ru/vacancy/131396611" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+
+        <div class="compact-card">
+            <div class="card-title" style="font-size: 1.1rem;">Team Lead Python</div>
+            <div class="card-company">X5 Tech</div>
+            <div class="score score-medium">⭐ 6/10</div>
+            <div class="tags">
+                <span class="tag tag-dev">Development</span>
+            </div>
+            <a href="https://hh.ru/vacancy/129613998" target="_blank" class="link">→ Подать заявку</a>
+        </div>
+    </div>
+
+    <!-- Итого -->
+    <!-- Executive Search База -->
+    <h2 id="executive-search" class="section-title">📞 Executive Search База</h2>
+    <p style="text-align: center; color: #64748b; margin-bottom: 30px;">
+        18 проверенных агентств для CDTO/IT Directors позиций
+    </p>
+    
+    <!-- Топ-5 агентств -->
+    <div style="background: linear-gradient(135deg, #fef3c7, #fde68a); border: 2px solid #f59e0b; border-radius: 20px; padding: 25px; margin-bottom: 30px;">
+        <h3 style="color: #92400e; font-size: 1.4rem; font-weight: 700; text-align: center; margin-bottom: 20px;">
+            🔥 ТОП-5 ПРИОРИТЕТ (звонить завтра)
+        </h3>
+        
+        <div class="compact-grid">
+            <div style="background: white; padding: 20px; border-radius: 15px; border: 2px solid #dc2626;">
+                <div style="font-weight: 700; color: #1a202c; margin-bottom: 8px;">CT Executive Search</div>
+                <div style="color: #64748b; font-size: 0.9rem; margin-bottom: 12px;">CTO, CDTO, IT Directors</div>
+                <div style="font-weight: 600; color: #dc2626; margin-bottom: 8px;">📞 +7 499 678 2111</div>
+                <div style="font-size: 0.85rem; color: #4a5568;">Москва, Шлюзовая наб. 8,1</div>
+            </div>
+            
+            <div style="background: white; padding: 20px; border-radius: 15px; border: 2px solid #dc2626;">
+                <div style="font-weight: 700; color: #1a202c; margin-bottom: 8px;">MChoice Executive</div>
+                <div style="color: #64748b; font-size: 0.9rem; margin-bottom: 12px;">#1 в России по C-level IT</div>
+                <div style="font-weight: 600; color: #dc2626; margin-bottom: 8px;">🌐 m-choice.com</div>
+                <div style="font-size: 0.85rem; color: #4a5568;">Лидер рынка executive search</div>
+            </div>
+            
+            <div style="background: white; padding: 20px; border-radius: 15px; border: 2px solid #dc2626;">
+                <div style="font-weight: 700; color: #1a202c; margin-bottom: 8px;">Spencer Stuart</div>
+                <div style="color: #64748b; font-size: 0.9rem; margin-bottom: 12px;">Глобальный лидер, CxO уровень</div>
+                <div style="font-weight: 600; color: #dc2626; margin-bottom: 8px;">📞 +7 495 797 3939</div>
+                <div style="font-size: 0.85rem; color: #4a5568;">Fortune 500, крупные корпорации</div>
+            </div>
+            
+            <div style="background: white; padding: 20px; border-radius: 15px; border: 2px solid #dc2626;">
+                <div style="font-weight: 700; color: #1a202c; margin-bottom: 8px;">Korn Ferry</div>
+                <div style="color: #64748b; font-size: 0.9rem; margin-bottom: 12px;">CTO, CDTO, Digital Officers</div>
+                <div style="font-weight: 600; color: #dc2626; margin-bottom: 8px;">📞 +7 495 721 3030</div>
+                <div style="font-size: 0.85rem; color: #4a5568;">Москва, Оружейный пер. 25</div>
+            </div>
+            
+            <div style="background: white; padding: 20px; border-radius: 15px; border: 2px solid #dc2626;">
+                <div style="font-weight: 700; color: #1a202c; margin-bottom: 8px;">Heidrick & Struggles</div>
+                <div style="color: #64748b; font-size: 0.9rem; margin-bottom: 12px;">Technology Practice</div>
+                <div style="font-weight: 600; color: #dc2626; margin-bottom: 8px;">📞 +7 495 721 3333</div>
+                <div style="font-size: 0.85rem; color: #4a5568;">Москва, ул. Льва Толстого 18/1</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Остальные агентства -->
+    <div style="background: rgba(148, 163, 184, 0.1); padding: 20px; border-radius: 15px; margin-bottom: 30px;">
+        <h4 style="color: #374151; font-weight: 600; margin-bottom: 15px;">📋 Специализированные IT-агентства (13 агентств):</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; font-size: 0.9rem;">
+            <div>• <strong>Talent Partners</strong> — talentpartners.ru</div>
+            <div>• <strong>IT Headhunters</strong> — itheadhunters.ru</div>
+            <div>• <strong>Digital Executive</strong> — CDTO, AI roles</div>
+            <div>• <strong>Russell Reynolds</strong> — глобальный</div>
+            <div>• <strong>Egon Zehnder</strong> — премиум</div>
+            <div>• <strong>Ward Howell</strong> — Москва</div>
+            <div>• <strong>PROMAN</strong> — IT специализация</div>
+            <div>• <strong>ANCOR</strong> — executive search</div>
+            <div>• <strong>Coleman Services</strong> — IT роли</div>
+            <div>• <strong>STAFF SERVICE</strong> — директора</div>
+            <div>• <strong>Амплуа</strong> — executive поиск</div>
+            <div>• <strong>CORNERSTONE</strong> — C-level</div>
+            <div>• <strong>Blackwood</strong> — CTO search</div>
+        </div>
+    </div>
+    
+    <!-- Стратегия -->
+    <div style="background: linear-gradient(135deg, #e0f2fe, #b3e5fc); border: 2px solid #0ea5e9; border-radius: 20px; padding: 25px; margin-bottom: 30px;">
+        <h4 style="color: #0c4a6e; font-weight: 700; text-align: center; margin-bottom: 15px;">
+            💡 Стратегия работы с Executive Search
+        </h4>
+        <div style="color: #0c4a6e; text-align: center;">
+            <strong>Последовательность:</strong><br>
+            1️⃣ Звони в топ-5 (CT Executive, MChoice, Spencer Stuart, Korn Ferry, Heidrick)<br>
+            2️⃣ Упоминай: 90 человек в команде, 500 млн руб экономэффект, AI-экспертиза<br>
+            3️⃣ Отправляй персонализированное резюме на каждое агентство<br>
+            4️⃣ Подчеркивай CDTO/Digital Transformation как основной вектор
+        </div>
+    </div>
+
+    <div class="last-updated">
+        <strong>✅ Все 47 вакансий проверены и активны</strong><br>
+        Последнее обновление: 25.03.2026 08:15<br>
+        🎯 Автообновление: ежедневно в 09:00 МСК
+    </div>
+
+</div>
+
+<script>
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Add loading animation to external links
+document.querySelectorAll('a[target="_blank"]').forEach(link => {
+    link.addEventListener('click', function() {
+        this.style.opacity = '0.6';
+        this.innerHTML = '⏳ Открываю...';
+        setTimeout(() => {
+            this.style.opacity = '1';
+            this.innerHTML = '→ Подать заявку';
+        }, 1500);
+    });
+});
+</script>
+
+</body>
+</html>
