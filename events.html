@@ -2,274 +2,82 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎤 IT Events Dashboard - Алексей Титов</title>
+    <title>🎤 Events Dashboard — Алексей Титов</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            margin: 0;
-            padding: 20px;
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: rgba(255,255,255,0.95);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .header h1 {
-            color: #2d3748;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-        .stat {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            border: 2px solid #e2e8f0;
-        }
-        .stat-number {
-            font-size: 2.5em;
-            font-weight: 800;
-            color: #667eea;
-            margin-bottom: 5px;
-        }
-        .stat-label {
-            color: #666;
-            font-weight: 500;
-        }
-        .events {
-            display: grid;
-            gap: 25px;
-        }
-        .event {
-            background: white;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-            border-left: 6px solid #667eea;
-            transition: all 0.3s ease;
-        }
-        .event:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
-        }
-        .event-title {
-            font-size: 1.4em;
-            font-weight: 700;
-            color: #2d3748;
-            margin-bottom: 15px;
-            line-height: 1.3;
-        }
-        .event-date {
-            color: #667eea;
-            font-weight: 600;
-            font-size: 1.1em;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .event-meta {
-            color: #4a5568;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-        .event-link {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            padding: 12px 25px;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-        }
-        .event-link:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-        }
-        .relevance {
-            display: inline-block;
-            background: linear-gradient(135deg, #10b981, #059669);
-            color: white;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: 600;
-            margin: 10px 0;
-        }
-        .cfp-status {
-            display: inline-block;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 0.85em;
-            font-weight: 600;
-            margin-left: 10px;
-        }
-        .cfp-open { background: #d1fae5; color: #047857; }
-        .cfp-closed { background: #fee2e2; color: #dc2626; }
-        .cfp-future { background: #fef3c7; color: #92400e; }
-        .update-time {
-            text-align: center;
-            color: #666;
-            margin-top: 40px;
-            padding: 20px;
-            background: #f7fafc;
-            border-radius: 10px;
-            font-size: 0.9em;
-        }
+        body { font-family: Arial, sans-serif; background: #667eea; margin: 0; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 15px; padding: 30px; }
+        .header { text-align: center; margin-bottom: 30px; }
+        .header h1 { color: #2d3748; font-size: 2.2em; }
+        .event-card { background: #f8f9fa; padding: 20px; margin: 15px 0; border-radius: 10px; border-left: 4px solid #667eea; }
+        .event-confirmed { border-left-color: #10b981; background: #ecfdf5; }
+        .event-title { font-size: 1.3em; font-weight: bold; color: #1a202c; margin-bottom: 10px; }
+        .event-date { color: #667eea; font-weight: 600; margin-bottom: 10px; }
+        .event-status { background: #10b981; color: white; padding: 4px 10px; border-radius: 12px; font-size: 0.8em; }
+        .event-link { display: inline-block; background: #667eea; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; margin-top: 10px; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>🎤 IT Events Dashboard</h1>
-            <p>Проверенные мероприятия с валидными ссылками - Алексей Титов</p>
-        </div>
-
-        <div class="stats">
-            <div class="stat">
-                <div class="stat-number">5</div>
-                <div class="stat-label">Всего событий</div>
-            </div>
-            <div class="stat">
-                <div class="stat-number">5</div>
-                <div class="stat-label">Валидные ссылки</div>
-            </div>
-            <div class="stat">
-                <div class="stat-number">2</div>
-                <div class="stat-label">CFP открыты</div>
-            </div>
-        </div>
-
-        <div class="events">
-
-            <div class="event">
-                <div class="event-title">ArchConf 2026 - Архитектура ПО</div>
-                <div class="event-date">
-                    📅 20.04.2026
-                    <span class="cfp-status cfp_open">CFP открыт</span>
-                </div>
-                <div class="relevance">⭐ Релевантность: 10/10</div>
-                <div class="event-meta">
-                    📍 Москва<br>
-                    📝 Конференция по архитектуре программного обеспечения<br>
-                    🎯 Паттерн: Architecture
-                </div>
-                <a href="https://archconf.ru/2026" target="_blank" class="event-link">
-                    → Перейти на мероприятие
-                </a>
-            </div>
-        
-            <div class="event">
-                <div class="event-title">Highload++ Moscow 2026</div>
-                <div class="event-date">
-                    📅 12.05.2026
-                    <span class="cfp-status cfp_closed">CFP закрыт</span>
-                </div>
-                <div class="relevance">⭐ Релевантность: 8/10</div>
-                <div class="event-meta">
-                    📍 Москва<br>
-                    📝 Конференция по высоконагруженным системам<br>
-                    🎯 Паттерн: Highload
-                </div>
-                <a href="https://highload.ru/moscow/2026" target="_blank" class="event-link">
-                    → Перейти на мероприятие
-                </a>
-            </div>
-        
-            <div class="event">
-                <div class="event-title">DevOps Moscow 2026</div>
-                <div class="event-date">
-                    📅 10.06.2026
-                    <span class="cfp-status cfp_open">CFP открыт</span>
-                </div>
-                <div class="relevance">⭐ Релевантность: 8/10</div>
-                <div class="event-meta">
-                    📍 Москва<br>
-                    📝 DevOps практики и платформенная инженерия<br>
-                    🎯 Паттерн: DevOps
-                </div>
-                <a href="https://devops-moscow.ru/2026" target="_blank" class="event-link">
-                    → Перейти на мероприятие
-                </a>
-            </div>
-        
-            <div class="event">
-                <div class="event-title">IT Business Forum Moscow 2026</div>
-                <div class="event-date">
-                    📅 15.09.2026
-                    <span class="cfp-status cfp_future">CFP скоро</span>
-                </div>
-                <div class="relevance">⭐ Релевантность: 9/10</div>
-                <div class="event-meta">
-                    📍 Москва<br>
-                    📝 Бизнес-форум по IT-стратегии и цифровой трансформации<br>
-                    🎯 Паттерн: Business+IT
-                </div>
-                <a href="https://it-business.ru/forum2026" target="_blank" class="event-link">
-                    → Перейти на мероприятие
-                </a>
-            </div>
-        
-            <div class="event">
-                <div class="event-title">FinTech Summit Moscow 2026</div>
-                <div class="event-date">
-                    📅 22.10.2026
-                    <span class="cfp-status cfp_future">CFP скоро</span>
-                </div>
-                <div class="relevance">⭐ Релевантность: 8/10</div>
-                <div class="event-meta">
-                    📍 Москва<br>
-                    📝 Финансовые технологии и банковская архитектура<br>
-                    🎯 Паттерн: FinTech
-                </div>
-                <a href="https://fintech-summit.ru/2026" target="_blank" class="event-link">
-                    → Перейти на мероприятие
-                </a>
-            </div>
-        
+            <h1>🎤 Events Dashboard</h1>
+            <p>Мероприятия для выступлений — Алексей Титов</p>
+            <p>📊 Всего мероприятий: 7 | Подтверждено: 2 | Потенциальных: 5</p>
         </div>
         
-        <div class="update-time">
-            📊 Обновлено: 25.03.2026 08:17 UTC<br>
-            ✅ Все ссылки проверены и валидны<br>
-            🎯 Фокус: IT-архитектура, DevOps, Enterprise
+        <h2>✅ Подтверждённые выступления</h2>
+        <div class="event-card event-confirmed">
+            <div class="event-title">Гиперавтоматизация 2026: от процессов к экосистемам</div>
+            <div class="event-date">📅 28.05.2026</div>
+            <span class="event-status">ПОДТВЕРЖДЕНО ✅</span>
+            <p>Архитектура экосистем vs процессный подход</p>
+            <a href="https://conferos.ru/event/giperavtomatizaciya_2026__ot_processov_k_ekosistemam" target="_blank" class="event-link">📋 Подробнее</a>
+        </div>
+        <div class="event-card event-confirmed">
+            <div class="event-title">CNews форум "Кейсы: Опыт ИТ-лидеров"</div>
+            <div class="event-date">📅 18.06.2026</div>
+            <span class="event-status">ПОДТВЕРЖДЕНО ✅</span>
+            <p>Неочевидные риски цифровой трансформации: когда ИТ-ландшафт становится ограничением</p>
+            <a href="https://cnconf.ru/cases/it-leaders-2026" target="_blank" class="event-link">📋 Подробнее</a>
+        </div><h2>🎯 Потенциальные мероприятия</h2>
+        <div class="event-card">
+            <div class="event-title">ArchConf 2026 - Архитектура ПО</div>
+            <div class="event-date">📅 20.04.2026</div>
+            <p>Конференция по архитектуре программного обеспечения</p>
+            <p><strong>Релевантность:</strong> 10/10</p>
+            <a href="https://archconf.ru/2026" target="_blank" class="event-link">📋 Подробнее</a>
+        </div>
+        <div class="event-card">
+            <div class="event-title">Highload++ Moscow 2026</div>
+            <div class="event-date">📅 12.05.2026</div>
+            <p>Конференция по высоконагруженным системам</p>
+            <p><strong>Релевантность:</strong> 8/10</p>
+            <a href="https://highload.ru/moscow/2026" target="_blank" class="event-link">📋 Подробнее</a>
+        </div>
+        <div class="event-card">
+            <div class="event-title">DevOps Moscow 2026</div>
+            <div class="event-date">📅 10.06.2026</div>
+            <p>DevOps практики и платформенная инженерия</p>
+            <p><strong>Релевантность:</strong> 8/10</p>
+            <a href="https://devops-moscow.ru/2026" target="_blank" class="event-link">📋 Подробнее</a>
+        </div>
+        <div class="event-card">
+            <div class="event-title">IT Business Forum Moscow 2026</div>
+            <div class="event-date">📅 15.09.2026</div>
+            <p>Бизнес-форум по IT-стратегии и цифровой трансформации</p>
+            <p><strong>Релевантность:</strong> 9/10</p>
+            <a href="https://it-business.ru/forum2026" target="_blank" class="event-link">📋 Подробнее</a>
+        </div>
+        <div class="event-card">
+            <div class="event-title">FinTech Summit Moscow 2026</div>
+            <div class="event-date">📅 22.10.2026</div>
+            <p>Финансовые технологии и банковская архитектура</p>
+            <p><strong>Релевантность:</strong> 8/10</p>
+            <a href="https://fintech-summit.ru/2026" target="_blank" class="event-link">📋 Подробнее</a>
+        </div>
+        <div style="text-align: center; margin-top: 40px; color: #64748b;">
+            <p><strong>🔄 Последнее обновление:</strong> 25.03.2026 08:24 МСК</p>
+            <p>📊 Данные: подтверждённые выступления + reliable-event-finder v2.0</p>
         </div>
     </div>
-    
-    <script>
-        // Добавляем эффект загрузки для ссылок
-        document.querySelectorAll('.event-link').forEach(link => {
-            link.addEventListener('click', function() {
-                this.style.opacity = '0.7';
-                this.innerHTML = '⏳ Открываю...';
-                setTimeout(() => {
-                    this.style.opacity = '1';
-                    this.innerHTML = '→ Перейти на мероприятие';
-                }, 2000);
-            });
-        });
-    </script>
 </body>
 </html>
